@@ -97,7 +97,9 @@ const SaveJokes: React.FC<SaveJokesProps> = ({ initialValue = 0, fetchChosenJoke
                         className="button minus"
                         onClick={decrementValue}
                     >
-                        -
+                        <div className='minus-box'>
+                            -
+                        </div>
                     </div>
 
                     <input
@@ -117,7 +119,9 @@ const SaveJokes: React.FC<SaveJokesProps> = ({ initialValue = 0, fetchChosenJoke
                         className="button plus"
                         onClick={incrementValue}
                     >
-                        +
+                        <div className='plus-box'>
+                            +
+                        </div>
                     </div>
                 </div>
 

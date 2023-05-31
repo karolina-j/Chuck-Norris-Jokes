@@ -25,32 +25,6 @@ p {
 
 
 
-.img-container {
-    width: 70%;
-    margin-top: 50px;
-
-}
-.jokeImage {
-  min-height: 180px;
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
-
-  border-radius: 8px;
-}
-
-
-
-
-
-
-.generator-container {
-    width: 100vh;
-}
-
-
-
 .GetCategories {
     width: 100vh;
     display: flex;
@@ -62,18 +36,36 @@ p {
 
 
 
-
 .GetJoke {
-    width: 100vh;
-    height: 100vh;
-    border: 2px solid blue;
+    border: 2px solid yellow;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-  }
+}
+
+
+
+
+
+
+.imageSection {
+    width: 70%;
+    margin-top: 50px;
+}
+.jokeImageCmp {
+    min-height: 180px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+
+    border-radius: 8px;
+
+}
+
 
 
 .jokeQuote {
@@ -85,11 +77,14 @@ p {
     font-weight: 600;
 }
 
-.ppp {
+
+
+/* SelectBox <select> class (categories) */
+.selectCategory {
 
 }
 
-
+/* text input */
 .GetJoke-input {
     width: 70%;
     min-height: 50px;
@@ -100,9 +95,12 @@ p {
     border-radius: 5px;
     
     padding-left: 20px;
+
 }
 
 
+
+/* Draw joke button */
 .GetJoke-btn {
     width: 70%;
     min-height: 50px;
@@ -117,29 +115,6 @@ p {
 
 
 
-.optionBox {
-    width: 70%;
-    
-}
-
-
-.selectCategory {
-    width: 100%;
-    min-height: 50px;
-    font-size: 16px;
-    color: #242138;
-
-    padding: 0 20px;
-
-    border: 2px solid #242138;
-    border-radius: 5px;
-}
-
-
-
-
-
-
 
 .counter {
     display: flex;
@@ -148,7 +123,6 @@ p {
     justify-content: center;
     gap: 10px;
 }
-
 
 .counter-top {
     width: 100%;
@@ -159,6 +133,13 @@ p {
     gap: 15px;
 }
 
+
+.controlMessage {
+    align-self: flex-start;
+
+}
+
+
 .counter-group {
     height: 50px;
     display: flex;
@@ -166,7 +147,6 @@ p {
     justify-content: center;
 
 }
-
 .button {
     height: 100%;
     width: 50px;
@@ -176,12 +156,23 @@ p {
     align-items: center;
     justify-content: center;
 }
+.button.minus {
 
+}
+.button.plus {
 
+}
+.minus-box {
+
+}
+.plus-box {
+
+}
 .quantity-field {
     height: 100%;
     width: 40px;
     text-align: center;
+
 }
 
 
@@ -195,60 +186,28 @@ p {
     justify-content: center;
 }
 
-.controlMessage {
-    align-self: flex-start;
-
-}
 
 
 
+/**********************************************/
+/**********************************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.jokeImageDummy {
-    height: 100px;
-    width: 400px;
-}
-
-
-
-.imageSection {
+.optionBox {
     width: 70%;
-    margin-top: 50px;
+    
 }
+.selectCategory {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+    color: #242138;
 
-.jokeImageCmp {
-    height: 100px;
-    min-height: 180px;
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center; 
+    padding: 0 20px;
 
-    border-radius: 8px;
+    border: 2px solid #242138;
+    border-radius: 5px;
 }
-
-
-
-
-
 
 
 

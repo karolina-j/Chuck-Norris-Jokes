@@ -42,14 +42,14 @@ const SelectBox = ({
     const result = label ? (
         <Label>
             <div>{label}</div>
-            <div className="select"> {selectBox} </div>
+            <div> {selectBox} </div>
         </Label>
     ) : (
         selectBox
     )
 
 
-    return <div className="optionBox"> {result} </div>
+    return <div> {result} </div>
 }
 
 export default SelectBox

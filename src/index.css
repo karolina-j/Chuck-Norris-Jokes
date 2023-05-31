@@ -244,7 +244,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-.saveJokes:hover {
+.saveJokes:active {
     background-color: #242138;
     color: #ebebeb;
 }

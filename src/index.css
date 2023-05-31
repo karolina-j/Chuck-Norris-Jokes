@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+
+#root, #root > *, .GetCategories, .GetJoke {
+    height: 100%;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -33,7 +38,7 @@ p {
     margin-top: 50px;
 }
 .jokeImageCmp {    
-    height: 150px;
+    min-height: 150px;
   
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,7 +83,6 @@ p {
     width: 70%;
     color: #242138;
 
-    
     font-size: 22px;
     font-weight: 600;
 }
@@ -111,6 +115,7 @@ p {
     
     padding-left: 20px;
 
+
 }
 
 
@@ -126,6 +131,8 @@ p {
 
     border: 2px solid #242138;
     border-radius: 5px;
+
+
 }
 
 
@@ -139,6 +146,8 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+
 }
 
 .counter-top {
@@ -171,15 +180,17 @@ p {
 .button {
     
     height: 50px;
-    width: 50px;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .button.minus {
+    padding-left: 5px;
 
 }
 .button.plus {
+    padding-right: 5px;
 
 }
 .minus-box,
@@ -201,9 +212,12 @@ p {
     background-color: #ebebeb;
     border: 0;
     height: 100%;
-    width: 40px;
+    width: 30%;
     text-align: center;
 
+}
+.quantity-field:focus {
+    outline: none;
 }
 
 
@@ -222,3 +236,17 @@ p {
     color: #ebebeb;
 }
 
+
+
+
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

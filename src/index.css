@@ -25,29 +25,6 @@ p {
 
 
 
-.GetCategories {
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
-.GetJoke {
-    border: 2px solid yellow;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
 
 
 
@@ -55,8 +32,8 @@ p {
     width: 70%;
     margin-top: 50px;
 }
-.jokeImageCmp {
-    min-height: 180px;
+.jokeImageCmp {    
+    height: 150px;
   
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,6 +42,35 @@ p {
     border-radius: 8px;
 
 }
+
+
+
+
+
+.option-container {
+    width: 70%;
+}
+
+.GetCategories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.GetJoke {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
 
 
 
@@ -81,6 +87,15 @@ p {
 
 /* SelectBox <select> class (categories) */
 .selectCategory {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+    color: #848389;
+
+    padding-left: 15px;
+
+    border: 2px solid #242138;
+    border-radius: 5px;
 
 }
 
@@ -117,6 +132,8 @@ p {
 
 
 .counter {
+    width: 70%;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,11 +153,15 @@ p {
 
 .controlMessage {
     align-self: flex-start;
-
+    color: #e39282;
 }
 
 
 .counter-group {
+    flex: 1;
+    background-color: #ebebeb;
+    border-radius: 5px;
+
     height: 50px;
     display: flex;
     align-items: center;
@@ -148,10 +169,9 @@ p {
 
 }
 .button {
-    height: 100%;
+    
+    height: 50px;
     width: 50px;
-    border: 2px solid #242138;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,13 +182,24 @@ p {
 .button.plus {
 
 }
-.minus-box {
-
-}
+.minus-box,
 .plus-box {
+    font-weight: 600;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #242138;
+    border-radius: 16px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
 .quantity-field {
+    background-color: #ebebeb;
+    border: 0;
     height: 100%;
     width: 40px;
     text-align: center;
@@ -178,78 +209,16 @@ p {
 
 .saveJokes {
     height: 50px;
-    width: 250px;
-    border: 2px solid #242138;
+    flex: 2;
+    background-color: #ebebeb;
+    border-radius: 5px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-/**********************************************/
-/**********************************************/
-
-
-.optionBox {
-    width: 70%;
-    
-}
-.selectCategory {
-    width: 100%;
-    min-height: 50px;
-    font-size: 16px;
-    color: #242138;
-
-    padding: 0 20px;
-
-    border: 2px solid #242138;
-    border-radius: 5px;
+.saveJokes:hover {
+    background-color: #242138;
+    color: #ebebeb;
 }
 
-
-
-
-
-
-
-
-
-/*
-
-.drawForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-}
-
-.draw-input {
-  min-width: 300px;
-  min-height: 40px;
-  text-indent: 10px;
-}
-
-.draw-button {
-  min-width: 300px;
-  padding: 10px 20px;
-}
-
-
-.Joke {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    width: 50rem;
-    margin: 0rem auto;
-    border: 0.1rem solid #8b5656;
-    padding: 1rem;
-    justify-content: space-between;
-}
-
-
-*/

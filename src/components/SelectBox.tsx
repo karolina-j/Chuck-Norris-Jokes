@@ -49,7 +49,7 @@ const SelectBox = ({
     )
 
 
-    return <div> {result} </div>
+    return <div className='option-container'> {result} </div>
 }
 
 export default SelectBox

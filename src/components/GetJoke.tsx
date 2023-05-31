@@ -140,7 +140,7 @@ const GetJoke = ({
                 className="GetJoke-btn"
                 onClick={handleClick}
             >
-                Get joke {buttonText}
+                Draw a random {buttonText} Joke
             </button>
 
 

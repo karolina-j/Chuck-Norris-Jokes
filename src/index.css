@@ -1,69 +1,296 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 body {
+  font-family: sans-serif;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-button {
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+.img-container {
+    width: 70%;
+    margin-top: 50px;
+
+}
+.jokeImage {
+  min-height: 180px;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+
+
+
+
+.generator-container {
+    width: 100vh;
 }
+
+
+
+.GetCategories {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+.GetJoke {
+    width: 100vh;
+    height: 100vh;
+    border: 2px solid blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+
+.jokeQuote {
+    width: 70%;
+    color: #242138;
+
+    
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ppp {
+
+}
+
+
+.GetJoke-input {
+    width: 70%;
+    min-height: 50px;
+    color: #242138;
+    font-size: 16px;
+
+    border: 2px solid #242138;
+    border-radius: 5px;
+    
+    padding-left: 20px;
+}
+
+
+.GetJoke-btn {
+    width: 70%;
+    min-height: 50px;
+    font-size: 16px;
+
+    color: #ebebeb;
+    background-color: #242138;
+
+    border: 2px solid #242138;
+    border-radius: 5px;
+}
+
+
+
+.optionBox {
+    width: 70%;
+    
+}
+
+
+.selectCategory {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+    color: #242138;
+
+    padding: 0 20px;
+
+    border: 2px solid #242138;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.counter-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.counter-group {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    height: 100%;
+    width: 50px;
+    border: 2px solid #242138;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quantity-field {
+    height: 100%;
+    width: 40px;
+    text-align: center;
+}
+
+
+.saveJokes {
+    height: 50px;
+    width: 250px;
+    border: 2px solid #242138;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlMessage {
+    align-self: flex-start;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jokeImageDummy {
+    height: 100px;
+    width: 400px;
+}
+
+
+
+.imageSection {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.jokeImageCmp {
+    height: 100px;
+    min-height: 180px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.drawForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.draw-input {
+  min-width: 300px;
+  min-height: 40px;
+  text-indent: 10px;
+}
+
+.draw-button {
+  min-width: 300px;
+  padding: 10px 20px;
+}
+
+
+.Joke {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    margin: 0rem auto;
+    border: 0.1rem solid #8b5656;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+
+*/
